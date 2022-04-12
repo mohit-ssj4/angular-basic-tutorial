@@ -1,0 +1,34 @@
+<h1 class="text-4xl font-extrabold">
+  NgStyle <span class="uppercase">works</span>!
+</h1>
+
+<div class="my-8">
+  <h3 class="text-2xl">ngStyle example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        This is a built in
+        <span class="font-bold">"Attribute Directive"</span>.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">This is used to modify the attribute of an element.</p>
+    </li>
+    <li>
+      <p class="mt-2">We can also pass dynamic values via a variable.</p>
+    </li>
+    <li>
+      <p class="mt-2">We can pass multiple values as well.</p>
+    </li>
+    <li>
+      <p class="mt-2 font-bol">Eg: -</p>
+      <p class="mt-2" [ngStyle]="{ color: colorName }">
+        The style of this content is modified using "ngStyle".
+      </p>
+      <p class="mt-2" [ngStyle]="styles">
+        The style of this content is modified using "ngStyle". Via the "styles"
+        object from the ts file.
+      </p>
+    </li>
+  </ul>
+</div>

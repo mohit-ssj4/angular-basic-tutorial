@@ -1,0 +1,37 @@
+<h1 class="text-4xl font-extrabold">
+  NgClass <span class="uppercase">works</span>!
+</h1>
+
+<div class="my-8">
+  <h3 class="text-2xl">ngClass example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        This is a built in
+        <span class="font-bold">"Attribute Directive"</span>.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">This is used to add classes to an element.</p>
+    </li>
+    <li>
+      <p class="mt-2">We can also pass dynamic values via a variable.</p>
+    </li>
+    <li>
+      <p class="mt-2">We can pass multiple values as well.</p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p class="mt-2" [ngClass]="className">
+        This element has "text-purple-600" class applied to it.
+      </p>
+      <p class="mt-2" [ngClass]="multipleClasses">
+        This element has "bg-purple-600, text-white" class applied to it.
+      </p>
+      <p class="mt-2" [ngClass]="{ 'text-red-600': addClass }">
+        This element has "text-red-600" class applied to it based on the
+        expression evaluation.
+      </p>
+    </li>
+  </ul>
+</div>

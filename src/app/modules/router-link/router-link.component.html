@@ -1,0 +1,65 @@
+<h1 class="text-4xl font-extrabold uppercase">RouterLink works!</h1>
+
+<div class="mt-8">
+  <h3 class="text-2xl">RouterLink</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">This is a built-in "Attribute Directive".</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        This is used to navigate to the configured routes in angular
+        applications.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Syntax: - <strong>[routerLink]="['/user/bob']"</strong>
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        <strong>Eg: -</strong>
+      </p>
+      <p class="mt-2">
+        Static Link: -
+        <a
+          class="text-purple-600 hover:underline underline-offset-2"
+          [routerLink]="['/parameterizedRoutes/100']"
+          >ParameterizedRoutes</a
+        >
+      </p>
+      <p class="mt-2">
+        Dynamic Link: -
+        <a
+          class="text-purple-600 hover:underline underline-offset-2"
+          [routerLink]="['/parameterizedRoutes', 101]"
+          >ParameterizedRoutes</a
+        >
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">We can pass multiple parameters as well.</p>
+    </li>
+  </ul>
+</div>
+
+<div class="my-8">
+  <h3 class="text-2xl">Redirect Routes Example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        If we want a route to re-direct to some other we will implement
+        "redirectTo" in our routes array.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Syntax: -
+        <strong>{{
+          '{ path: "", redirectTo: "directives", pathMatch: "full" }'
+        }}</strong>
+      </p>
+    </li>
+  </ul>
+</div>

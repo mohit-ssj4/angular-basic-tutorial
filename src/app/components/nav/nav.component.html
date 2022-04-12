@@ -1,0 +1,43 @@
+<div class="drawer drawer-mobile">
+  <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+  <div class="flex flex-col drawer-content">
+    <div class="navbar bg-base-100">
+      <div class="flex-1 lg:hidden">
+        <a class="text-xl normal-case" [routerLink]="['/']">Angular App</a>
+      </div>
+      <div class="flex-none">
+        <label for="my-drawer-2" class="cursor-pointer lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </label>
+      </div>
+    </div>
+    <div class="px-2 lg:px-12 lg:-my-[2.7rem]">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="lg:shadow-2xl lg:z-10 drawer-side lg:shadow-purple-600">
+    <label for="my-drawer-2" class="drawer-overlay"></label>
+    <ul
+      class="p-4 space-y-4 overflow-y-auto menu w-60 md:w-80 bg-base-100 text-base-content"
+    >
+      <li *ngFor="let navItem of navArray">
+        <a [routerLink]="[navItem.link]" [routerLinkActive]="['active']">
+          {{ navItem.pathName }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

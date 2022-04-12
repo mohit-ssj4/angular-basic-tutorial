@@ -1,0 +1,82 @@
+<h1 class="text-4xl font-extrabold uppercase">Pipes works!</h1>
+
+<div class="mt-8">
+  <h3 class="text-2xl">Pipes</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">Pipes are used to transform the data.</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        They take an input and transform it into our desired format.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        They are written using the
+        <span class="font-bold">Pipe (|)</span> operator.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        There are many in-built pipes available in Angular, but we can make
+        custom pipes of our own.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">We can pass parameters to the pipes as well.</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        We can also chain the pipes to perform multiple operations.
+      </p>
+    </li>
+  </ul>
+</div>
+
+<div class="my-8">
+  <h3 class="text-2xl">Pipes example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">These pipes are provided to us by Angular.</p>
+    </li>
+    <li>
+      <p class="mt-2">Some of these are: - uppercase, lowercase, date etc.</p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p class="mt-2">
+        <strong>{{ username | uppercase }}</strong> - In this example we
+        transform the "username" variable to uppercase using "uppercase" pipe.
+      </p>
+      <p class="mt-2">
+        <strong>{{ dateValue | date }}</strong> - In this example we show the
+        today's date in a specific format.
+      </p>
+      <p class="mt-2">
+        <strong>{{ currencyValue | currency }}</strong> - In this example we
+        show the currency value along with the type of currency symbol. By,
+        default the curreny is set to "$".
+      </p>
+      <p class="mt-2">
+        <strong>{{ currencyValue | currency: "INR" }}</strong> - In this example
+        by, passing a parameter like:- " value | pipe_name: "parameter " we
+        modify the output.
+      </p>
+      <p class="mt-2">
+        <strong>{{ dateValue | date: "short" }}</strong> - In this example we
+        modify the date and show in the short form using "short" as a parameter.
+      </p>
+      <p class="mt-2">
+        <strong>{{ dateValue | date | uppercase }}</strong> - This is an example
+        for chaining multiple pipes. First "date" pipe executes and then the
+        "uppercase" pipe will execute.
+      </p>
+      <p class="mt-2">
+        <strong>{{ username | uppercase | shorten }}</strong> - This is an
+        example for custom pipe. Here, the "shorten" pipe is a custom pipe which
+        will display the string in short form if it exceeds 5 characters.
+      </p>
+    </li>
+  </ul>
+</div>

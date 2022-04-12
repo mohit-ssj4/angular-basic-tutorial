@@ -1,0 +1,75 @@
+<h1 class="text-4xl font-extrabold">
+  NgSwitch <span class="uppercase">works</span>!
+</h1>
+
+<div class="my-8">
+  <h3 class="text-2xl">*ngSwitch example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        This is a built in
+        <span class="font-bold">"Structural Directive"</span>.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        This is used to modify the DOM based on an expression evaluation.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        This is similar to the switch statements used in other programming
+        languages.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">Allows us to add or remove content dynamically.</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Unlike if statement, ngSwitch can take in multiple value params for
+        conditional check.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">There are mainly three components of ngSwitch: -</p>
+      <ul class="ml-12 list-decimal">
+        <li><p class="mt-2">ngSwitch</p></li>
+        <li><p class="mt-2">ngSwitchCase</p></li>
+        <li><p class="mt-2">ngSwitchDefault</p></li>
+      </ul>
+    </li>
+    <li>
+      <p class="mt-2">
+        The cases which match with the expressions will get executed.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        If no cases match the expression then the, default case will be
+        executed.
+      </p>
+    </li>
+    <li>
+      <div [ngSwitch]="conditionExpression">
+        <p class="mt-2 font-bold">Eg: -</p>
+        <div *ngSwitchCase="'case1'">
+          <p class="mt-2">
+            Case 1 shows up if "conditionExpression" is "case1".
+          </p>
+        </div>
+        <div *ngSwitchCase="'case2'">
+          <p class="mt-2">
+            Case 2 shows up if "conditionExpression" is "case2".
+          </p>
+        </div>
+        <div *ngSwitchDefault>
+          <p class="mt-2">
+            This is the default case if no "conditionExpression" matches with
+            the "ngSwitchCase".
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

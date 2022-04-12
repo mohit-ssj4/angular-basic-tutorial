@@ -1,0 +1,7 @@
+li > a {
+  @apply rounded-full focus:bg-purple-600 focus:text-purple-50 hover:shadow-xl hover:bg-purple-100;
+}
+
+.active {
+  @apply bg-purple-600 !rounded-full text-purple-50 shadow-xl hover:!bg-purple-600;
+}

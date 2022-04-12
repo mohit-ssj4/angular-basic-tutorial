@@ -1,0 +1,108 @@
+<h1 class="text-4xl font-extrabold">
+  NgFor <span class="uppercase">works</span>!
+</h1>
+
+<div class="mt-8">
+  <h3 class="text-2xl">*ngFor example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        This is a built in
+        <span class="font-bold">"Structural Directive"</span>.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        This is used to modify the DOM based on an expression evaluation.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        This is similar to the for loops used in other programming languages.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Allows us to loop over an array/object and display them.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        The below example loops over the "users" array and displays them on the
+        view.
+      </p>
+    </li>
+    <li class="overflow-x-auto">
+      <p class="mt-2 font-bold">Eg: -</p>
+      <table class="table w-full mt-2 table-compact">
+        <thead>
+          <tr class="!bg-purple-300">
+            <td>User Id</td>
+            <td>User Name</td>
+            <td>Index</td>
+            <td>First</td>
+            <td>Last</td>
+            <td>Even</td>
+            <td>Odd</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="
+              let user of users;
+              index as i;
+              first as f;
+              last as l;
+              even as e;
+              odd as o
+            "
+            class="hover"
+          >
+            <td>{{ user.userId }}</td>
+            <td>{{ user.userName }}</td>
+            <td>{{ i }}</td>
+            <td>{{ f }}</td>
+            <td>{{ l }}</td>
+            <td>{{ e }}</td>
+            <td>{{ o }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+</div>
+
+<div class="my-8">
+  <h3 class="text-2xl">*ngFor With local variables</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-2">
+        "index as i" gives us the index values of the iterable.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        "first as f" gives us true value where the index is the first in the
+        iterable.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        "last as l" gives us true value where the index is the last in the
+        iterable.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        "even as e" gives us true value where the index is the even in the
+        iterable.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        "odd as o" gives us true value where the index is the odd in the
+        iterable.
+      </p>
+    </li>
+  </ul>
+</div>

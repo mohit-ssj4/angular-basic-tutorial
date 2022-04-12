@@ -1,0 +1,74 @@
+<h1 class="text-4xl font-extrabold uppercase">RouteGuards works!</h1>
+
+<div class="mt-8">
+  <h3 class="text-2xl">RouteGuards</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        They help us to prevent the user to access the routes without
+        authentication.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">Used to secure route paths.</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Route guards resolve to true or false based on a custom
+        logic/functionality.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">We can write any number of route guards.</p>
+    </li>
+    <li>
+      <p class="mt-2"><strong>Syntax: - ng g guard guard_name</strong></p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Guards have the following interfaces which we can use: -
+      </p>
+      <ul class="ml-12 list-decimal">
+        <li>
+          <p class="mt-2">
+            <strong>canActivate</strong> - tells if we can use the parent route
+            or not.
+          </p>
+        </li>
+        <li>
+          <p class="mt-2">
+            <strong>canActivateChild</strong> - tells if we can use the child
+            route or not.
+          </p>
+        </li>
+        <li>
+          <p class="mt-2">
+            <strong>canDeactivate</strong> - tells if we can leave the route or
+            not.
+          </p>
+        </li>
+        <li>
+          <p class="mt-2">
+            <strong>canLoad</strong> - can the lazy loaded module be loaded or
+            not.
+          </p>
+        </li>
+        <li>
+          <p class="mt-2">
+            <strong>resolve</strong> - tells what to do before the routes get
+            activated.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p class="mt-2">
+        <a
+          [routerLink]="['/directives']"
+          class="text-purple-600 hover:underline underline-offset-1"
+          >Directives</a
+        >
+      </p>
+    </li>
+  </ul>
+</div>

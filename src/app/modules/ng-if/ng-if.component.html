@@ -1,0 +1,111 @@
+<h1 class="text-4xl font-extrabold">
+  NgIf <span class="uppercase">works</span>!
+</h1>
+
+<div class="mt-8">
+  <h3 class="text-2xl">*ngIf example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        This is a built in
+        <span class="font-bold">"Structural Directive"</span>.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        This is used to modify the DOM based on an expression evaluation.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        If the expression evaluates to true the content will show, else it will
+        not show.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">Allows us to add or remove content dynamically.</p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p *ngIf="showContent" class="mt-2">
+        This shows up if the "showContent" expression evaluates to true.
+      </p>
+    </li>
+  </ul>
+</div>
+
+<div class="mt-8">
+  <h3 class="text-2xl">*ngIf With else example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p *ngIf="showContent" class="mt-4">Used along with *ngIf.</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        Else statement shows up if the evaluation of the expression is false.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        In order to use this we need to use
+        <span class="font-bold">"ng-template"</span> and pass the template
+        reference variable along with it.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p class="mt-2" *ngIf="!showContent; else elseBlock">
+        This shows if the expression evaluates to true;
+      </p>
+      <ng-template #elseBlock>
+        <p class="mt-2">
+          This shows if the "showContent" expression evaluates to false.
+        </p>
+      </ng-template>
+    </li>
+  </ul>
+</div>
+
+<div class="my-8">
+  <h3 class="text-2xl">*ngIf With then and else example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p *ngIf="showContent" class="mt-4">Used along with *ngIf.</p>
+    </li>
+    <li>
+      <p class="mt-2">
+        In order to use this we need to use
+        <span class="font-bold">"ng-template"</span> and pass the template
+        reference variable along with it.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        When the expression evaluates to true, using template reference variable
+        the <span class="font-bold">"then"</span> block will be executed.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2">
+        When the expression evaluates to false, using template reference
+        variable the <span class="font-bold">"else"</span> block will be
+        executed.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p class="mt-2" *ngIf="showContent; then thenBlock; else elseBlock"></p>
+      <ng-template #thenBlock>
+        <p class="mt-2">
+          This is the then block. This shows up if the "showContent" expression
+          evaluates to true.
+        </p>
+      </ng-template>
+      <ng-template #elseBlock>
+        <p class="mt-2">
+          This shows if the "showContent" expression evaluates to false.
+        </p>
+      </ng-template>
+    </li>
+  </ul>
+</div>

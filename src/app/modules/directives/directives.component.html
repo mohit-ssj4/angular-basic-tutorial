@@ -1,0 +1,97 @@
+<h1 class="text-4xl font-extrabold uppercase">directives works!</h1>
+
+<div class="mt-8">
+  <h3 class="text-2xl">Directives</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">Directives are mainly of two types: -</p>
+      <ul class="ml-12 list-decimal">
+        <li><p class="mt-2">Structural Directives</p></li>
+        <li><p class="mt-2">Attribute Directives</p></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="mt-8">
+  <h3 class="text-2xl">Structural Directives</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">They are used to change the structure of the DOM.</p>
+    </li>
+    <li>
+      <p class="mt-2">They always starts with "*" symbol.</p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p class="mt-2">
+        *ngFor(for loop), *ngIf(if-else), *ngSwitchCase(switch case) etc.
+      </p>
+    </li>
+  </ul>
+</div>
+
+<div class="mt-8">
+  <h3 class="text-2xl">Attribute Directives</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-4">
+        They change the attribute of the element they are applied to.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p class="mt-2">ngClass, ngStyle etc.</p>
+    </li>
+  </ul>
+</div>
+
+<div class="mt-8">
+  <h3 class="text-2xl">*ngIf example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-2">This allows us to modify the structure of the DOM.</p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p *ngIf="showContent" class="mt-4">
+        This shows up only if the 'showContent' property is true.
+      </p>
+    </li>
+  </ul>
+</div>
+
+<div class="mt-8">
+  <h3 class="text-2xl">ngStyle example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-2">
+        This allows us to change the style of the element they are used on.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p [ngStyle]="{ color: colorName }" class="mt-4">
+        This content is styled using the ngStyle attribute directive.
+      </p>
+    </li>
+  </ul>
+</div>
+
+<div class="my-8">
+  <h3 class="text-2xl">ngClass example</h3>
+  <ul class="ml-12 list-disc">
+    <li>
+      <p class="mt-2">
+        This allows us to add dynamic classes based on an expression evaluation.
+      </p>
+    </li>
+    <li>
+      <p class="mt-2 font-bold">Eg: -</p>
+      <p [ngClass]="{ 'text-purple-600': showContent }" class="mt-4">
+        This p tag contains a class 'text-purple-600' based on an expression
+        evaluation.
+      </p>
+    </li>
+  </ul>
+</div>
